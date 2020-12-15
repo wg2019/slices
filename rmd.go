@@ -1,7 +1,5 @@
 package slices
 
-import "fmt"
-
 // RmDInt 整型切片去重.
 func RmDInt(slice []int) []int {
 	intMap := make(map[int]bool)
@@ -24,7 +22,6 @@ func RmDString(slice []string) []string {
 			newSlice = append(newSlice, value)
 		}
 		intMap[value] = true
-		fmt.Printf("value: %+v", value)
 	}
 	return slice
 }
