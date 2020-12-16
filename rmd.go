@@ -23,5 +23,5 @@ func RmDString(slice []string) []string {
 		}
 		intMap[value] = true
 	}
-	return slice
+	return newSlice
 }

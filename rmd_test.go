@@ -38,3 +38,15 @@ func TestRmDString(t *testing.T) {
 		}
 	}
 }
+
+func BenchmarkRmDInt(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		RmDInt([]int{1, 2, 3, 4, 5, 1, 2})
+	}
+}
+
+func BenchmarkRmDString(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		RmDString([]string{"1", "2", "3", "4", "5", "1", "2"})
+	}
+}
